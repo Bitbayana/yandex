@@ -1,0 +1,47 @@
+@import "_nullstyle";
+@import "_kit";
+
+.hero{
+
+  background: #{$gradient1}, #{$gradient2};  height: 636px;
+  &__inner{
+    display: flex;
+    flex-direction: column;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    &_description{
+      margin-top: 35px;
+      font-size: 18px;
+      line-height: 23.4px;
+    }
+    &_price-sale{
+      z-index: -1;
+      height: 23px;
+      position: absolute;
+      right: -45px;
+      top: 0;
+      width: 75px;
+      background: $colorPriceSale;
+      padding-right:  5px;
+      border-radius: 25px;
+      color: rgba(128, 128, 128, 1);
+      text-align: end;
+    }
+    &_price{
+      display: inline-block;
+      height: 23px;
+      z-index: 0;
+      position: relative;
+      color: rgba(33, 32, 31, 1);
+      background: radial-gradient(circle, $colorPrice, $colorPrice1);
+      padding: 0 5px;
+      border-radius: 25px;
+
+    }
+  }
+}
+
+
+@import "_media";
