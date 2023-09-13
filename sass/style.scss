@@ -2,8 +2,7 @@
 @import "_kit";
 
 .hero{
-
-  background: #{$gradient1}, #{$gradient2};  height: 636px;
+  background: #{$gradient1}, #{$gradient2};
   &__inner{
     display: flex;
     flex-direction: column;
@@ -11,12 +10,15 @@
   &__text{
     display: flex;
     flex-direction: column;
+    z-index: 1;
+
     &_description{
       margin-top: 35px;
       font-size: 18px;
       line-height: 23.4px;
     }
     &_price-sale{
+      text-decoration: line-through;
       z-index: -1;
       height: 23px;
       position: absolute;
@@ -38,7 +40,20 @@
       background: radial-gradient(circle, $colorPrice, $colorPrice1);
       padding: 0 5px;
       border-radius: 25px;
-
+    }
+  }
+  &__img{
+    position: relative;
+    height: 265.639px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      left: -12px;
+      position: absolute;
+      width: 319.798px;
+      height: 265.639px;
+      transform: rotate(-8.008deg);
     }
   }
 }

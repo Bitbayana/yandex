@@ -6,12 +6,25 @@
 }
 
 
-@media (min-width: 576px) {
-}
-
-
-@media (min-width: 660px) {
-
+@media (min-width: 510px) {
+  .hero{
+    &__inner{
+      flex-direction: row;
+    }
+    &__img{
+      height: auto;
+      img{
+        left: -160px;
+        height: auto;
+      }
+    }
+  }
+  .icon {
+    &__stamp{
+      bottom: 65px;
+      left: -75px;
+    }
+  }
 }
 
 //?------------------------------------------
@@ -20,7 +33,34 @@
 
 @media (min-width: 768px) {
   //!----hero----1--
-
+  .hero{
+    &__inner{
+      padding-top: 50px;
+    }
+    &__text{
+      h1{
+        font-size: 45px;
+        line-height: 45px;
+      }
+    }
+    &_description{
+      font-size: 22px;
+    }
+    &__img{
+      img{
+        bottom: -55px;
+        left: -100px;
+        width: 405px;
+      }
+    }
+  }
+  .icon {
+    &__stamp{
+      bottom: 45px;
+      left: 10px;
+      width: 100px;
+    }
+  }
 }
 
 //?------------------------------------------
@@ -28,25 +68,98 @@
 //?------------------------------------------
 
 @media (min-width: 992px) {
-  //!----header----0--
+  .hero{
+    &__text{
+      h1{
+        font-size: 60px;
+        line-height: 55px;
+      }
+      &_description{
+         font-size: 24px;
+        line-height: 31.2px;
+       }
+      &_price{
+        height: 30px;
+      }
+      &_price-sale{
+        height: 30px;
+      }
+    }
+    &__img{
+      img{
+        bottom: -75px;
+        left: -135px;
+        width: 505px;
+      }
+    }
+  }
+  .icon {
+     &__logo{
+       width: 176px;
+       height: 50px;
+     }
+    &__stamp{
+      bottom: 61px;
+      left: 3px;
+      width: 120px;
+   }
+ }
 }
 
-
 //?-------------------------------------------
-//*_____3-lg-3______--1024--______3-lg-3______
+//*_____3-lg-3______--1240--______3-lg-3______
 //?-------------------------------------------
 
-@media (min-width: 1024px) {
-
-}
 
 @media (min-width: 1240px) {
-
+  .hero{
+    &__text{
+      h1{
+        font-size: 70px;
+        line-height: 70px;
+      }
+    }
+    &__img{
+      img{
+        bottom: -125px;
+        left: -120px;
+        width: 640px;
+      }
+    }
+  }
+  .icon {
+    &__stamp{
+      bottom: 60px;
+      left: 55px;
+      width: 155px;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
-  //!----header----0--
+  .hero{
+    &__text{
+      h1{
+        font-size: 72px;
+        line-height: 72px;
+      }
+    }
+      &__img{
+        img{
+          bottom: -200px;
+          width: 744px;
+          left: -115px;
+        }
+      }
 
+    .icon {
+      &__stamp{
+        bottom: 25px;
+        left: 80px;
+        width: 195px;
+      }
+  }
+}
 }
 
 @media (min-width: 1700px) {
