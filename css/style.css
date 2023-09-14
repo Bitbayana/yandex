@@ -162,39 +162,14 @@ h3 {
     margin-right: 16px;
     min-width: 83px;
     height: 83px; }
-
-.align-center {
-  text-align: center; }
-
-.v-center {
-  margin: auto 0; }
-
-.pt-25 {
-  padding-top: 25px; }
-
-.pb-25 {
-  padding-bottom: 25px; }
-
-.pl-25 {
-  padding-left: 25px; }
-
-.pr-25 {
-  padding-right: 25px; }
-
-.mb-25 {
-  margin-bottom: 25px; }
-
-.ml-25 {
-  margin-left: 25px; }
-
-.d-flex {
-  display: flex; }
-
-.dn {
-  display: none; }
-
-.opacity-7 {
-  opacity: 70%; }
+  .icon__quotes {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    width: 77.721px;
+    height: 39.418px;
+    z-index: 2;
+    /* Задаем z-index, чтобы угловая картинка была поверх основной */ }
 
 .hero {
   background: linear-gradient(0deg, white, rgba(255, 255, 255, 0.2)), linear-gradient(90deg, rgba(255, 92, 77, 0.2) 0%, rgba(235, 70, 159, 0.2) 25%, rgba(131, 65, 239, 0.2) 72%, rgba(63, 104, 249, 0.2) 100%);
@@ -263,6 +238,10 @@ h3 {
     flex-direction: row;
     align-items: center; }
 
+.event__inner-sm {
+  position: relative; }
+.event__inner-md {
+  display: none; }
 .event__button {
   display: flex;
   justify-content: center;
@@ -283,7 +262,7 @@ h3 {
   .swiper-slide img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 20px;
+    border-radius: 50px;
     /* Закругленные края */ }
 
 .swiper-button-prev,
@@ -386,7 +365,13 @@ h3 {
   .text__basic {
     font-size: 24px;
     line-height: 120%;
-    /* 28.8px */ } }
+    /* 28.8px */
+    max-width: 445px; }
+
+  .event__inner-sm {
+    display: none; }
+  .event__inner-md {
+    display: block; } }
 @media (min-width: 1240px) {
   .hero {
     height: 640px; }

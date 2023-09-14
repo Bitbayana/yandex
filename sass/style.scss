@@ -86,12 +86,20 @@
 
 //!----event----3--
 .event{
+  &__inner-sm{
+    position: relative;
+  }
+  &__inner-md{
+    display: none;
+  }
   &__button{
     display: flex;
     justify-content: center;
     margin-top: 48px;
   }
 }
+
+//!----event_swiper----3--
 .swiper-container {
   margin-top: 47px;
   width: 100%;
@@ -108,11 +116,9 @@
   img{
     max-width: 100%;
     max-height: 100%;
-    border-radius: 20px; /* Закругленные края */
+    border-radius: 50px; /* Закругленные края */
   }
 }
-
-
 
 .swiper-button-prev,
 .swiper-button-next {

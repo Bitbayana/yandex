@@ -95,8 +95,6 @@ $colorPrice1: rgba(182, 185, 255, 1);
       font-size: 13px;
     }
   }
-  &__basic-text{
-  }
 }
 h1{
   line-height: 36px;
@@ -136,54 +134,18 @@ h3{
     min-width: 83px;
     height: 83px;
   }
-  //&__arrow{
-  //  width: 27px;
-  //  height: 24px;
-  //}
+  &__quotes{
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    width: 77.721px;
+    height: 39.418px;
+    z-index: 2; /* Задаем z-index, чтобы угловая картинка была поверх основной */
+
+  }
 }
 
 
-
-
-
-
-.align-center {
-  text-align: center;
-}
-.v-center {
-  margin: auto 0;
-}
-
-.pt-25{
-  padding-top: 25px;
-}
-.pb-25{
-  padding-bottom: 25px;
-}
-.pl-25{
-  padding-left: 25px;
-}
-.pr-25{
-  padding-right: 25px;
-}
-
-.mb-25{
-  margin-bottom: 25px;
-}
-.ml-25{
-  margin-left: 25px;
-}
-.d-flex{
-  display: flex;
-}
-
-.dn {
-  display: none;
-}
-
-.opacity-7 {
-  opacity: 70%;
-}
 
 
 
