@@ -95,11 +95,22 @@ $colorPrice1: rgba(182, 185, 255, 1);
       font-size: 13px;
     }
   }
+  &__basic-text{
+  }
 }
 h1{
   line-height: 36px;
   font-weight: 900;
   font-size: 32px;
+}
+
+h3{
+  letter-spacing: -0.64px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 100%; /* 32px */
+  max-width: 610px;
+  margin-bottom: 32px;
 }
 
 
@@ -120,6 +131,15 @@ h1{
     bottom: 53px;
     left: 70px;
   }
+  &__advantages{
+    margin-right: 16px;
+    min-width: 83px;
+    height: 83px;
+  }
+  //&__arrow{
+  //  width: 27px;
+  //  height: 24px;
+  //}
 }
 
 
