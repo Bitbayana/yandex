@@ -129,6 +129,12 @@ h3{
     bottom: 53px;
     left: 70px;
   }
+  &__stamp-scooter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   &__advantages{
     margin-right: 16px;
     min-width: 83px;
@@ -140,8 +146,20 @@ h3{
     right: 50px;
     width: 77.721px;
     height: 39.418px;
-    z-index: 2; /* Задаем z-index, чтобы угловая картинка была поверх основной */
-
+    z-index: 2;
+  }
+  &__coffee{
+    position: absolute;
+    bottom: -240px;
+    right: -280px;
+    z-index: 2;
+  }
+  &__geolocation{
+    position: absolute;
+    top: -180px;
+    left: -255px;
+    z-index: 2;
+    transform: rotate(-15deg);
   }
 }
 

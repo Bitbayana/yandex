@@ -158,6 +158,11 @@ h3 {
     position: absolute;
     bottom: 53px;
     left: 70px; }
+  .icon__stamp-scooter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .icon__advantages {
     margin-right: 16px;
     min-width: 83px;
@@ -168,8 +173,18 @@ h3 {
     right: 50px;
     width: 77.721px;
     height: 39.418px;
+    z-index: 2; }
+  .icon__coffee {
+    position: absolute;
+    bottom: -240px;
+    right: -280px;
+    z-index: 2; }
+  .icon__geolocation {
+    position: absolute;
+    top: -180px;
+    left: -255px;
     z-index: 2;
-    /* Задаем z-index, чтобы угловая картинка была поверх основной */ }
+    transform: rotate(-15deg); }
 
 .hero {
   background: linear-gradient(0deg, white, rgba(255, 255, 255, 0.2)), linear-gradient(90deg, rgba(255, 92, 77, 0.2) 0%, rgba(235, 70, 159, 0.2) 25%, rgba(131, 65, 239, 0.2) 72%, rgba(63, 104, 249, 0.2) 100%);
@@ -241,7 +256,23 @@ h3 {
 .event__inner-sm {
   position: relative; }
 .event__inner-md {
-  display: none; }
+  display: none;
+  margin-top: 100px;
+  justify-content: center;
+  transform: rotate(2deg); }
+.event__inner-md-img {
+  border-radius: 50px;
+  margin-bottom: 8px; }
+.event__left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  position: relative; }
+.event__right {
+  display: flex;
+  flex-direction: column;
+  margin-top: -125px;
+  position: relative; }
 .event__button {
   display: flex;
   justify-content: center;
@@ -283,6 +314,45 @@ h3 {
 
 .swiper-button-prev {
   margin-right: 12px; }
+
+.subscription__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 25px; }
+  .subscription__inner_ellipse {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.29;
+    background: #8241EF;
+    filter: blur(100px); }
+.subscription__scooter {
+  display: none;
+  position: relative; }
+  .subscription__scooter_i {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    max-width: 680px; }
+  .subscription__scooter_plus {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%); }
+.subscription__scooter-visible {
+  position: relative;
+  min-height: 285px; }
+  .subscription__scooter-visible_i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 188.853px;
+    height: 262.225px; }
 
 @media (min-width: 510px) {
   .hero {
@@ -351,6 +421,14 @@ h3 {
       flex-direction: column;
       align-items: start; }
 
+  .subscription__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 90px; }
+  .subscription__scooter {
+    display: block; }
+  .subscription__scooter-visible_i {
+    left: 30%; }
+
   .icon__logo {
     width: 176px;
     height: 50px; }
@@ -358,6 +436,8 @@ h3 {
     bottom: 61px;
     left: 3px;
     width: 120px; }
+  .icon__stamp-scooter {
+    left: 30%; }
   .icon__advantages {
     margin-right: 0;
     margin-bottom: 16px; }
@@ -371,7 +451,7 @@ h3 {
   .event__inner-sm {
     display: none; }
   .event__inner-md {
-    display: block; } }
+    display: flex; } }
 @media (min-width: 1240px) {
   .hero {
     height: 640px; }
@@ -389,7 +469,13 @@ h3 {
     width: 155px; }
 
   h3 {
-    margin-bottom: 48px; } }
+    margin-bottom: 48px; }
+
+  .event__inner-md {
+    margin-top: 69px; }
+
+  .subscription__scooter_i {
+    top: 50%; } }
 @media (min-width: 1440px) {
   .hero {
     height: 804px; }
@@ -403,6 +489,17 @@ h3 {
     .hero .icon__stamp {
       bottom: 25px;
       left: 80px;
-      width: 195px; } }
+      width: 195px; }
+
+  .event__inner-md-img {
+    width: 456px;
+    height: 456px; }
+  .event__right {
+    margin-top: -215px; }
+
+  .icon__coffee {
+    bottom: -150px; }
+  .icon__geolocation {
+    top: -135px; } }
 
 /*# sourceMappingURL=style.css.map */
