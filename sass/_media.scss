@@ -78,7 +78,7 @@
 @media (min-width: 992px) {
   //!----hero----1--
   .hero{
-    height: 530px;
+    height: 615px;
     &__text{
       h1{
         font-size: 60px;
@@ -93,6 +93,10 @@
       }
       &_price-sale{
         height: 30px;
+      }
+      button{
+        position: inherit;
+        transform: translate(0);
       }
     }
     &__img{
@@ -136,6 +140,20 @@
       &_i{
         left: 30%;
       }
+    }
+  }
+  .button{
+    margin: 50px 0;
+  }
+  @media (min-width: 1080px){
+    .subscription{
+       &__scooter{
+         &_plus{
+           left: 40px;
+           max-width: 205px;
+           top: 5px;
+         }
+       }
     }
   }
 
@@ -185,12 +203,13 @@
 @media (min-width: 1240px) {
   //!----hero----1--
   .hero{
-    height: 640px;
+    height: 720px;
     &__text{
       h1{
         font-size: 70px;
         line-height: 70px;
       }
+
     }
     &__img{
       img{
@@ -222,6 +241,11 @@
     &__scooter{
       &_i{
         top: 50%;
+      }
+      &_plus{
+        left: 100px;
+        max-width: 205px;
+        top: 35px;
       }
     }
   }
@@ -262,6 +286,16 @@
        margin-top: -215px;
      }
   }
+  .subscription{
+    margin-top: 105px;
+    &__scooter{
+      &_plus{
+        left: 110px;
+        max-width: 230px;
+        transform: rotate(6.056deg);
+      }
+    }
+  }
   .icon {
     &__coffee{
       bottom: -150px;
@@ -270,7 +304,15 @@
       top: -135px;
     }
   }
-
+  .footer{
+    margin-top: 111px;
+    margin-bottom: 128px;
+    font-size: 13px;
+  }
+  .button{
+    font-size: 24px;
+    padding: 24px;
+  }
 }
 
 

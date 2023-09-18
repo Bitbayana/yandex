@@ -16,8 +16,7 @@
 
 a,
 a:visited {
-  background-color: transparent;
-  text-decoration: none; }
+  background-color: transparent; }
 
 a:hover {
   text-decoration: none; }
@@ -77,10 +76,7 @@ img {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-size: inherit;
   font-weight: inherit; }
 
@@ -115,12 +111,20 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 35px;
   cursor: pointer;
   transition: 0.2s;
-  width: 100%; }
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  margin: 32px auto;
+  max-width: 318px;
+  background: #FFDE40;
+  box-shadow: 0px 4px 64px 0px rgba(255, 222, 64, 0.59); }
   .button::selection {
     background: transparent; }
+  .button:hover {
+    opacity: 0.5; }
 
 .text {
   font-size: 16px;
@@ -222,6 +226,12 @@ h3 {
       background: radial-gradient(circle, #e0b8ff, #b6b9ff);
       padding: 0 5px;
       border-radius: 25px; }
+    .hero__text button {
+      position: fixed;
+      bottom: 0;
+      transform: translate(-50%);
+      left: 50%;
+      z-index: 10; }
   .hero__img {
     position: relative;
     height: 265.639px;
@@ -284,6 +294,9 @@ h3 {
   height: 100%;
   overflow: hidden; }
 
+.swiper-wrapper {
+  z-index: 0; }
+
 .swiper-slide {
   width: 100%;
   height: 100%;
@@ -298,6 +311,7 @@ h3 {
 
 .swiper-button-prev,
 .swiper-button-next {
+  z-index: 0;
   background-color: #FFDE40;
   width: 48px;
   height: 48px;
@@ -311,11 +325,17 @@ h3 {
   .swiper-button-next svg {
     width: 27px;
     height: 24px; }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    opacity: 0.5; }
 
 .swiper-button-prev {
   margin-right: 12px; }
+  .swiper-button-prev:hover {
+    opacity: 0.5; }
 
 .subscription__inner {
+  margin-top: 72px;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 25px; }
@@ -339,10 +359,9 @@ h3 {
     transform: translate(-50%, -50%);
     max-width: 680px; }
   .subscription__scooter_plus {
+    max-width: 205px;
     position: absolute;
-    top: 40%;
-    left: 70%;
-    transform: translate(-50%, -50%); }
+    top: 65px; }
 .subscription__scooter-visible {
   position: relative;
   min-height: 285px; }
@@ -353,6 +372,16 @@ h3 {
     transform: translate(-50%, -50%);
     width: 188.853px;
     height: 262.225px; }
+
+.footer {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  color: #C5C5C5;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 120%; }
+  .footer a {
+    color: inherit; }
 
 @media (min-width: 510px) {
   .hero {
@@ -389,7 +418,7 @@ h3 {
     width: 100px; } }
 @media (min-width: 992px) {
   .hero {
-    height: 530px; }
+    height: 615px; }
     .hero__text h1 {
       font-size: 60px;
       line-height: 55px; }
@@ -400,6 +429,9 @@ h3 {
       height: 30px; }
     .hero__text_price-sale {
       height: 30px; }
+    .hero__text button {
+      position: inherit;
+      transform: translate(0); }
     .hero__img img {
       bottom: -75px;
       left: -135px;
@@ -429,6 +461,14 @@ h3 {
   .subscription__scooter-visible_i {
     left: 30%; }
 
+  .button {
+    margin: 50px 0; } }
+@media (min-width: 992px) and (min-width: 1080px) {
+  .subscription__scooter_plus {
+    left: 40px;
+    max-width: 205px;
+    top: 5px; } }
+@media (min-width: 992px) {
   .icon__logo {
     width: 176px;
     height: 50px; }
@@ -454,7 +494,7 @@ h3 {
     display: flex; } }
 @media (min-width: 1240px) {
   .hero {
-    height: 640px; }
+    height: 720px; }
     .hero__text h1 {
       font-size: 70px;
       line-height: 70px; }
@@ -475,7 +515,11 @@ h3 {
     margin-top: 69px; }
 
   .subscription__scooter_i {
-    top: 50%; } }
+    top: 50%; }
+  .subscription__scooter_plus {
+    left: 100px;
+    max-width: 205px;
+    top: 35px; } }
 @media (min-width: 1440px) {
   .hero {
     height: 804px; }
@@ -497,9 +541,25 @@ h3 {
   .event__right {
     margin-top: -215px; }
 
+  .subscription {
+    margin-top: 105px; }
+    .subscription__scooter_plus {
+      left: 110px;
+      max-width: 230px;
+      transform: rotate(6.056deg); }
+
   .icon__coffee {
     bottom: -150px; }
   .icon__geolocation {
-    top: -135px; } }
+    top: -135px; }
+
+  .footer {
+    margin-top: 111px;
+    margin-bottom: 128px;
+    font-size: 13px; }
+
+  .button {
+    font-size: 24px;
+    padding: 24px; } }
 
 /*# sourceMappingURL=style.css.map */

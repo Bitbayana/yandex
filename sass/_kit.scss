@@ -1,29 +1,16 @@
 $clrt: transparent;
-//$color-yellow-dark: darken($color-yellow, 20%);
-//$color-yellow-light: lighten($color-yellow, 20%);
-
 $gradient1: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2));
 $gradient2: linear-gradient(90deg, rgba(255, 92, 77, 0.2) 0%, rgba(235, 70, 159, 0.2) 25%, rgba(131, 65, 239, 0.2) 72%, rgba(63, 104, 249, 0.2) 100%);
-
 $color-text: rgba(33, 32, 31, 1);
-
 $color1: rgba(224, 184, 255, 1);
 $color2: rgba(182, 185, 255, 1);
 $color3: rgba(241, 241, 241, 0.6);
-
 $mixedColor: mix($color1, mix($color2, $color3, 60%), 60%);
 $colorPriceSale: rgba(red($mixedColor), green($mixedColor), blue($mixedColor), 0.6);
-
 $colorPrice: rgba(224, 184, 255, 1);
 $colorPrice1: rgba(182, 185, 255, 1);
-
-
-
-
-//:root {
-//  --swiper-theme-color: #FFCC00;
-//  --swiper-pagination-bullet-horizontal-gap: calc(15px / 2);
-//}
+$color-footer: #C5C5C5;
+$color-button: #FFDE40;
 
 .container {
   margin: 0 32px 0 32px;
@@ -54,36 +41,30 @@ $colorPrice1: rgba(182, 185, 255, 1);
 }
 
 .button {
-  //позиционирование
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 35px;
   cursor: pointer;
   transition: 0.2s;
   width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  margin: 32px auto;
+  max-width: 318px;
 
   //цвета
-  //color: $color-dark;
-  //background-color: $color-yellow;
+  background: $color-button;
+  box-shadow: 0px 4px 64px 0px rgba(255, 222, 64, 0.59);
 
   //для невыделения текста
   &::selection {
     background: $clrt;
   }
-  &_active {
-    //background-color: $color-yellow-dark;
-  }
   &:hover {
-    //background-color: $color-warning;
+    opacity: 0.5;
   }
-  &:active {
-    //background-color: $color-sky;
-  }
-
 }
-
-
 
 .text {
   //шрифт
@@ -101,7 +82,6 @@ h1{
   font-weight: 900;
   font-size: 32px;
 }
-
 h3{
   letter-spacing: -0.64px;
   font-size: 32px;
