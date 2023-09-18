@@ -1,6 +1,6 @@
 @import "_nullstyle";
 @import "_kit";
-
+@import "_font";
 //!----hero----1--
 .hero{
   background: #{$gradient1}, #{$gradient2};
@@ -16,7 +16,7 @@
     &_description{
       margin-top: 35px;
       font-size: 18px;
-      line-height: 23.4px;
+      line-height: 130%;
     }
     &_price-sale{
       text-decoration: line-through;
@@ -60,7 +60,6 @@
       left: -12px;
       position: absolute;
       width: 319.798px;
-      height: 265.639px;
       transform: rotate(-8.008deg);
     }
   }
@@ -70,6 +69,7 @@
 .advantages{
   margin-bottom: 72px;
   &__head{
+    font-family: 'YandexFont';
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 24px;
@@ -225,6 +225,7 @@
 
 //!----footer----5--
 .footer{
+  font-family: 'YandexFontRegular';
   margin-top: 72px;
   margin-bottom: 72px;
   color: $color-footer;

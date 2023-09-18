@@ -78,11 +78,13 @@ $color-button: #FFDE40;
   }
 }
 h1{
+  font-family: 'YandexFont';
   line-height: 36px;
   font-weight: 900;
   font-size: 32px;
 }
 h3{
+  font-family: 'YandexFont';
   letter-spacing: -0.64px;
   font-size: 32px;
   font-weight: 900;
@@ -106,7 +108,7 @@ h3{
     height: 79.932px;
     transform: rotate(3.699deg);
     position: absolute;
-    bottom: 53px;
+    bottom: 45px;
     left: 70px;
   }
   &__stamp-scooter{

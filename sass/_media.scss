@@ -101,7 +101,7 @@
     }
     &__img{
       img{
-        bottom: -75px;
+        bottom: 80px;
         left: -135px;
         width: 505px;
       }
@@ -145,17 +145,7 @@
   .button{
     margin: 50px 0;
   }
-  @media (min-width: 1080px){
-    .subscription{
-       &__scooter{
-         &_plus{
-           left: 40px;
-           max-width: 205px;
-           top: 5px;
-         }
-       }
-    }
-  }
+
 
   //!----icon, h3----00--
   .icon {
@@ -164,7 +154,7 @@
        height: 50px;
      }
     &__stamp{
-      bottom: 61px;
+      bottom: 212px;
       left: 3px;
       width: 120px;
    }
@@ -193,7 +183,17 @@
     }
   }
 }
-
+@media (min-width: 1080px){
+  .subscription{
+    &__scooter{
+      &_plus{
+        left: 40px;
+        max-width: 205px;
+        top: 5px;
+      }
+    }
+  }
+}
 
 //?-------------------------------------------
 //*_____3-lg-3______--1240--______3-lg-3______
@@ -213,7 +213,7 @@
     }
     &__img{
       img{
-        bottom: -125px;
+        bottom: 25px;
         left: -120px;
         width: 640px;
       }
@@ -223,7 +223,7 @@
   //!----icon----00--
   .icon {
     &__stamp{
-      bottom: 60px;
+      bottom: 205px;
       left: 55px;
       width: 155px;
     }
@@ -255,15 +255,33 @@
   //!----hero----1--
   .hero{
     height: 804px;
+    &__ellipse{
+      position: absolute;
+      border-radius: 657.8px;
+      opacity: 0.5;
+      background: #8241EF;
+      filter: blur(100px);
+      width: 657.8px;
+      height: 401.903px;
+      transform: rotate(-140.03deg);
+      flex-shrink: 0;
+      top: 65px;
+      left: -100px;
+    }
     &__text{
       h1{
         font-size: 72px;
         line-height: 72px;
       }
+      &_price{
+        padding: 0 12px;
+      }
     }
       &__img{
+
+
         img{
-          bottom: -200px;
+          bottom: -15px;
           width: 744px;
           left: -115px;
         }
@@ -271,7 +289,7 @@
 
     .icon {
       &__stamp{
-        bottom: 25px;
+        bottom: 205px;
         left: 80px;
         width: 195px;
       }
@@ -293,6 +311,7 @@
         left: 110px;
         max-width: 230px;
         transform: rotate(6.056deg);
+        top: 108px;
       }
     }
   }
@@ -312,6 +331,9 @@
   .button{
     font-size: 24px;
     padding: 24px;
+  }
+  h3{
+    font-size: 48px;
   }
 }
 
